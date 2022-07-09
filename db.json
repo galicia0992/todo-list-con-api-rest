@@ -1,0 +1,16 @@
+{
+  "actividades": [
+    {
+      "descripcion": "prueba",
+      "active": true,
+      "complete": false,
+      "id": 1
+    },
+    {
+      "descripcion": "checklist semanal",
+      "active": false,
+      "complete": true,
+      "id": 2
+    }
+  ]
+}

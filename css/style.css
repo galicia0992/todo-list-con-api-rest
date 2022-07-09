@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  background-color: #f8f6f6;
+  z-index: -1;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.headImg {
+  width: 100%;
+  height: 50vh;
+}
+
+.formTodo {
+  padding: 0 20px 0 20px;
+  position: relative;
+  top: -152px;
+}
+
+.form-control {
+  height: 47px;
+  border-radius: 5px;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 12px;
+  font-weight: 700;
+}
+
+p, .total {
+  margin: 0;
+  font-size: 12px;
+}
+
+.itemsLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px none;
+  height: 50px;
+}
+
+.grupos {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px none;
+  height: 50px;
+}
+
+.tareas {
+  margin-top: 15px;
+  padding: 0;
+}
+
+.tarea {
+  margin-bottom: 2.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px none;
+  height: 50px;
+}
+
+.checkTrue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkFalse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #e4e5f1;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cross {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+#all, #active, #completed {
+  cursor: pointer;
+}
+
+#all:hover, #active:hover, #completed:hover {
+  color: #9708CC;
+}
+
+@media only screen and (min-width: 768px) {
+  .tareas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-control, .tarea, .itemsLeft, .grupos {
+    width: 50%;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .itemsLeft, .grupos {
+    position: relative;
+    left: 25%;
+  }
+  .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .headImg {
+    width: 100%;
+    height: 40vh;
+    content: url(/images/bg-desktop-light.jpg);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tareas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-control, .tarea, .itemsLeft, .grupos {
+    width: 40%;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .itemsLeft, .grupos {
+    position: relative;
+    left: 30%;
+  }
+  .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .headImg {
+    width: 100%;
+    height: 35vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
